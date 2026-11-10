@@ -1,0 +1,20 @@
+[project]
+name = "atelier"
+version = "0.1.0"
+description = "A painting studio in code: simulated brush strokes, artist personas"
+authors = [
+    { name = "Jason Ganz" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numba>=0.68.1",
+    "numpy>=2.5.4",
+    "pillow>=13.0.0",
+]
+
+[project.scripts]
+atelier = "atelier:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
